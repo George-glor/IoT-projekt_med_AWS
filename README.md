@@ -56,13 +56,6 @@ Follow these steps to set up and run the project:
 
 List any dependencies or prerequisites that users need to install before running the project.
 
-## License
 
-This project is licensed under the [Your License] License - see the [LICENSE.md](LICENSE.md) file for details.
 
-## Acknowledgments
-
-Mention any acknowledgments or references here.
-
-Happy IoT-ing!
 
