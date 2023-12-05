@@ -1,0 +1,18 @@
+Certifikat för ESP32:
+ESP32-enheten använder ett X.509-certifikat för att verifiera sin identitet vid anslutning till AWS IoT Core.
+Certifikatet innehåller en offentlig nyckel som används för att säkra kommunikationen med AWS.
+AWS IoT Core:
+AWS IoT Core verifierar ESP32-enhetens identitet genom dess certifikat.
+Genom att konfigurera behörighetspolicys definierar du vilka åtgärder ESP32-enheten får utföra i AWS IoT Core.
+Lambda-funktioner:
+Lambda-funktionerna är konfigurerade med behörighetspolicys för att endast tillåta specifika åtgärder, såsom att skriva till Amazon Timestream.
+Amazon Timestream:
+ESP32-enheten skickar data till Amazon Timestream.
+Certifikat och behörighetspolicys används för att säkerställa att endast auktoriserade enheter kan skriva till och läsa från Timestream.
+Grafana:
+Grafana används som ett dashboard för att visualisera data från Timestream.
+Användarautentisering och behörighetskontroller i Grafana säkerställer att endast auktoriserade användare kan få åtkomst till och visualisera data.
+Säker Kommunikation:
+Mellan ESP32 och AWS IoT Core använder man TLS/SSL-kryptering för att säkerställa att kommunikationen är skyddad.
+Certifikat och nycklar på enheten och i molnet används för att etablera en säker och autentiserad anslutning.
+
